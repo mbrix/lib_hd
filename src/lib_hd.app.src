@@ -1,0 +1,16 @@
+{application, lib_hd,
+ [
+  {description, "Bitcoin BIP-32 HD library"},
+  {vsn, "1.0"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  crypto,
+                  libsecp256k1,
+                  erlsha2,
+                  base58
+                 ]},
+  {mod, { lib_hd, []}},
+  {env, []}
+ ]}.
